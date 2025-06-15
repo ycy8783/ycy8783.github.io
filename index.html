@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>선택을 빼앗긴 삶</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img class="background blurred visible" id="background" src="img/home.jpg" alt="배경 이미지" />
+
+  <h1 id="gameTitle">선택을 빼앗긴 삶</h1>
+
+  <div class="stats" id="stats">
+    💰 돈: <span id="money" class="stat-green">100</span> |
+    😵 스트레스: <span id="stress" class="stat-green">50</span> |
+    🧱 안정도: <span id="stability" class="stat-green">50</span>
+  </div>
+
+  <div class="card" id="eventCard">
+    <h2 id="eventTitle"></h2>
+    <p id="eventText"></p>
+    <div id="choiceButtons"></div>
+  </div>
+
+  <div class="ending-card" id="endingCard">
+    <h2 id="endingTitle"></h2>
+    <p id="endingText"></p>
+  </div>
+
+  <div id="turnMessage" class="turn-message"></div>
+
+  <button id="startButton" class="start-button">게임 시작</button>
+  <button id="soundToggle">🔇</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
